@@ -8,7 +8,7 @@
 
 namespace MyBB\Core\Http\Controllers;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use Illuminate\Http\Request;
 use MyBB\Core\Database\Models\Post;
 use MyBB\Core\Database\Models\Topic;

@@ -8,7 +8,7 @@
 
 namespace MyBB\Core\Http\Controllers\Auth;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;

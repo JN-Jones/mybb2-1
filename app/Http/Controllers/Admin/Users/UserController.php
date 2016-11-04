@@ -8,7 +8,7 @@
 
 namespace MyBB\Core\Http\Controllers\Admin\Users;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use MyBB\Core\Database\Repositories\UserRepositoryInterface;
 use MyBB\Core\Database\Repositories\RoleRepositoryInterface;
 use MyBB\Core\Http\Controllers\Admin\AdminController;

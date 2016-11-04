@@ -9,7 +9,6 @@
 namespace MyBB\Core\Providers;
 
 use Collective\Html\FormBuilder;
-use DaveJamesMiller\Breadcrumbs\Manager;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Cache\Repository;
 use Illuminate\Contracts\Foundation\Application;
@@ -48,6 +47,8 @@ use MyBB\Core\Likes\Database\Repositories\LikesRepositoryInterface;
 use MyBB\Core\Permissions\PermissionChecker;
 use MyBB\Core\Renderers\Post\Quote\MyCode;
 use MyBB\Core\Renderers\Post\Quote\QuoteInterface;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
+use DaveJamesMiller\Breadcrumbs\Manager;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -166,7 +167,7 @@ class AppServiceProvider extends ServiceProvider
 
         // TODO: Default user (Guest) = $this->initDefaultUser();
 
-        $this->app->instance(Manager::class, $this->app['breadcrumbs']);
+        $this->app->bind("breadcrumbs", Breadcrumbs::class);
 
         // Fix for the form builder
         $this->app->bind(FormBuilder::class, function ($app) {

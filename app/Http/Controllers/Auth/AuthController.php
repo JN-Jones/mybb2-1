@@ -8,7 +8,7 @@
 
 namespace MyBB\Core\Http\Controllers\Auth;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use Illuminate\Auth\AuthManager;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;

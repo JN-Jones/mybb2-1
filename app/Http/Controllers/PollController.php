@@ -12,7 +12,7 @@
 
 namespace MyBB\Core\Http\Controllers;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use Illuminate\Contracts\Auth\Guard;
 use MyBB\Core\Database\Repositories\ForumRepositoryInterface;
 use MyBB\Core\Database\Repositories\PollRepositoryInterface;

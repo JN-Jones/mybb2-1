@@ -12,7 +12,7 @@
 
 namespace MyBB\Core\Http\Controllers;
 
-use Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Http\Request;
 use MyBB\Core\Database\Models\Conversation;

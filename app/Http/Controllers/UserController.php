@@ -8,7 +8,7 @@
 
 namespace MyBB\Core\Http\Controllers;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 use MyBB\Core\Database\Repositories\ProfileFieldGroupRepositoryInterface;
 use MyBB\Core\Database\Repositories\UserProfileFieldRepositoryInterface;
 use MyBB\Core\Database\Repositories\UserRepositoryInterface;

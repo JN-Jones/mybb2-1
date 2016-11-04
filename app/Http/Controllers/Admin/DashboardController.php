@@ -8,7 +8,7 @@
 
 namespace MyBB\Core\Http\Controllers\Admin;
 
-use DaveJamesMiller\Breadcrumbs\Manager as Breadcrumbs;
+use MyBB\Core\Subclasses\Breadcrumbs\Breadcrumbs;
 
 class DashboardController extends AdminController
 {

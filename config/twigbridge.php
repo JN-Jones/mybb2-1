@@ -112,6 +112,7 @@ return [
             \MyBB\Core\Twig\Extensions\Moderation::class,
             \MyBB\Core\Twig\Extensions\Presenter::class,
             \MyBB\Core\Widgets\Twig\Widget::class,
+            \MyBB\Core\Twig\Extensions\Breadcrumbs::class,
             // 'TwigBridge\Extension\Laravel\Legacy\Facades',
         ],
         /*
@@ -142,12 +143,6 @@ return [
 		|
 		*/
         'facades' => [
-            'Breadcrumbs' => [
-                'is_safe' => [
-                    'render',
-                    'renderIfExists',
-                ]
-            ]
         ],
         /*
 		|--------------------------------------------------------------------------
